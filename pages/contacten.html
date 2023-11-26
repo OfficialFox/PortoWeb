@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+
+    <style>
+
+        /* Custom font */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+        /* Box sizing */
+        *, *::before, *::after {
+          box-sizing: border-box;
+        }
+
+        /* Navigation */
+        nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #3f51b5;
+          color: #fff;
+          padding: 1rem;
+        }
+
+        nav ul {
+          display: flex;
+          list-style-type: none;
+        }
+
+        nav li {
+          margin-left: 1rem;
+        }
+
+        /* Hero section */
+        .hero {
+          background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-img.jpg');
+          background-size: cover;
+          color: #fff;
+          padding: 8rem 1rem;
+          text-align: center;
+          position: relative;
+        }
+
+        .hero::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.7);
+        }
+
+        .hero h1 {
+          animation: 1s slideIn forwards;
+        }
+
+        @keyframes slideIn {
+          from {
+            transform: translateY(-2rem);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        /* Projects grid */
+        #projects ul {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-gap: 2rem;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        #projects li {
+          transition: transform .2s;
+        }
+
+        #projects li:hover {
+          transform: scale(1.05);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Contact</h1>
+</header>
+
+<section>
+
+    <h2>Discord</h2>
+    <p>Je kan me vinden op Discord via: @OfficialFox_</p>
+
+    <h2>Email</h2>
+    <p>Stuur me een email via: OfficialFox2005@outlook.com</p>
+
+</section>
+
+</body>
+
+</html>
